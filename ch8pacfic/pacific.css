@@ -21,20 +21,21 @@ header {
 	
 h1 {
 	color: #FFFFFF;
-	margin-bottom: 0;
+	margin-bottom: 0px;
 	font-family: Georgia, "Times New Roman";
-	margin-top: 0;
+	margin-top: 0px;
 }
 
 nav {
 	font-weight: bold;
-	float:left;
+    float:left;
 	width:160px;
 	padding: 20px;
 
 }
 nav ul {
-	margin:0;
+    list-style-type:none;
+	margin:0px;
 	padding-left:0px;
 	font-size:1.2em;
 }
@@ -154,13 +155,9 @@ header, main, nav, footer, figure, figcaption, aside, section, article {display:
         margin: 0px;
         background-color: #FFFFFF;
     }
-    #wrapper {
-        min-width:0;
-        width:auto;
-        box-shadow: none;
-    }
+
     main {
-        margin-left: 0;
+        margin-left: 0px;
     }
     nav {
         float:none;
@@ -175,20 +172,25 @@ header, main, nav, footer, figure, figcaption, aside, section, article {display:
         padding-bottom: 0.75em; 
         
     }
+    #wrapper {
+        min-width:0px;
+        width:auto;
+        box-shadow: none;
+    }
     #homehero {
-        margin-left: 0; 
+        margin-left: 0px; 
         height: 200px;
     }
     #yurthero {
-        margin-left: 0; 
+        margin-left: 0px; 
         height: 200px;
     }
     #trailhero {
-        margin-left: 0; 
+        margin-left: 0px; 
         height: 200px;
     }
     footer {
-        margin-left:0;
+        margin-left:0px;
     }
     
 }
@@ -205,26 +207,25 @@ header, main, nav, footer, figure, figcaption, aside, section, article {display:
         font-size: 90%;
     }
     nav {
-        padding:0;
+        padding:0px;
     }
     nav li {
         display:block;
-        margin:0;
-        border-style: solid;
-        border-bottom: #330000;
+        margin:0px;
+        border-bottom: 2px solid #330000;
         
     }
     #homehero {
         background-image:none;
-        height:0;
+        height:0px;
     }
     #yurthero {
         background-image:none;
-        height:0;
+        height:0px;
     }
     #trailhero {
         background-image:none;
-        height:0;
+        height:0px;
     }
     #mobile{
         display:inline;
