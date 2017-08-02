@@ -1,0 +1,165 @@
+
+<html>
+	<head>
+		<title>JavaJam Coffee House</title>
+		<link rel="stylesheet" type="text/css" href="javajam.css">
+		<meta tag="viewport" content="width=device-width initial-scale=1.0">
+		<!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+        </script>
+        <![endif]-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+        var hidden = false
+        $(document).ready(function(){
+            $("button").click(function(){
+                if (hidden){
+                    $("#jobs").show();
+                    $("#menu").show();
+                    $("#music").show();
+                    hidden=false
+                }
+                else {
+                    $("#jobs").hide();
+                    $("#menu").hide();
+                    $("#music").hide();
+                    hidden=true
+                }
+            });
+        });
+        </script>
+	</head>
+	
+	<body>
+    <div id = wrapper>
+    <div id = index>
+			<header>
+				<h1>JavaJam Coffee House</h1>
+			</header>
+        
+			<main id = hero>
+				<h2>Follow the Winding Road to JavaJam</h2>
+
+
+				<ul>
+					<li>Specialtiy Coffee and tea </li>
+					<li>Bagels, Muffins and Organic Snacks</li>
+					<li>Music and Poetry Reading</li>
+					<li>Open mic Night Every Friday</li>
+				</ul>
+
+				<div>
+					54321 Route 42<br>
+					Ellison Bay, WI 54210<br>
+					<a id = "mobile" href = "tel:1-888-555-5555">1-888-555-5555</a>
+					<span id = "desktop">1-888-555-5555</span>
+				</div>
+
+				<br>
+			</main>
+
+		</div>
+    <div id = jobs>
+			<main>
+				<h2>Jobs at JavaJam</h2>
+
+				<p>
+					Want to work at JavaJam? Fill out the form below to start your application.
+					Required fields are marked with an asterisk *.
+				</p>
+
+				<form action="http://webdevbasics.net/scripts/javajam.php" method="post">
+					<label for="myName">*Name</label>
+						<input type="text" id="myName" name="myName" required>
+					<label for="myEmail">*E-mail</label>
+						<input type="myEmail" id="myEmail" name="myEmail" required>
+					<label for="startDate">*Start Date</label>
+						<input type="date" id="startDate" name="startDate" required>
+					<label for="myExperience">*Experience</label>
+						<textarea id="myExperience" name="myExperience" rows="2" cols="20" required></textarea>
+					<input type="submit" value="Apply Now">
+				</form>
+            </main>
+        </div>
+    <div id = menu>
+    			<main>
+				<h2>Coffee at JavaJam</h2>
+
+				<table>
+					<tr>
+						<td>Just Java</td>
+					
+						<td>
+						Regular house blend, decaffeinated coffee, or flavor of the day.<br>
+						Endless Cup $2.00
+						</td>
+					</tr>
+					<tr>
+						<td>Cafe au Lait</td>
+
+						<td>
+						House blended coffee infused into a smooth, steamed milk.<br>
+						Single $2.00 Double $3.00
+						</td>
+					</tr>
+					<tr>
+						<td>Iced Cappuccino</td>
+
+						<td>
+						Sweetened espresso blended with icy-cold milk and served in a chilled glass.<br>
+						Single $4.75 Double $5.75
+						</td>
+					</tr>
+				</table>
+            </main>
+        </div>
+        <div id = music>
+        <main>
+				<h2>Music at JavaJam</h2>
+
+				<p>
+					The first Friday night each month at JavaJam is a special night. Join us from 8pm to 11pm for some music 
+					you won't want to miss!
+				</p>
+				<section>
+					<h3>january</h3>
+					<a href ="images/melanie.jpg"> <img src = "images/melaniethumb.jpg" alt = "melanie" height = 200 width = 200> </a>
+					<p>
+						Melanie Morris entertains with her melodic folk style<br>
+						CDs are now available.
+						<audio controls>
+							<source src="media/melanie.mp3" type="audio/mp3">
+							<source src="media/melanie.ogg" type="audio/ogg">
+						</audio>
+						
+					</p>
+				</section>
+				
+				<section>
+					<h3>febuary</h3>
+					<a href ="images/greg.jpg"> <img src = "images/gregthumb.jpg" alt = "greg" height = 200 width = 200> </a>
+					<p>
+						Tahoe Greg is back from his tour<br>
+						New songs.<br>
+						New Stoires.<br>
+						CDs are now avaiable.
+						<audio controls>
+							<source src="media/greg.mp3" type="audio/mp3">
+							<source src="media/greg.ogg" type="audio/ogg">
+						</audio>
+					</p>
+				</section>
+            </main>
+        </div>
+    <footer>
+        <h2>
+            Copyright &copy 2017 JavaJam CofeeHouse<br>
+            <a href ="mailto:blah@blah.com">Nick Flatow</a>	
+        </h2>
+        <button>Click Me</button>
+    </footer>
+        </div>
+
+        
+	</body>
+</html>
