@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>Milwaukee::Reservations</title>
+		<link rel="stylesheet" type="text/css" href="final.css">
+	    <meta tag="viewport" content="width=device-width initial-scale=1.0">
+		<!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+        </script>
+        <![endif]-->
+	</head>
+	
+	<body>
+		<div id = wrapper>
+			<header>
+				<h1>logo text here</h1>
+			</header>
+
+			<nav>
+				<ul>
+					<li><a href = index.html>Home</a></li>
+					<li><a href = attractions.html>Atrractions</a></li>
+					<li><a href = reservations.html>Reservations</a></li>
+				</ul>
+			</nav>
+
+			<main>
+				<div id = "banner">
+					<img src="images/banner.jpg" alt="art museum">
+				</div>
+				<h2 align = "middle">Place a reservation</h2>
+
+				<p align = "middle">
+					Please fill in the Required fields marked with an asterisk *.
+				</p>
+
+				<form action="http://webdevbasics.net/scripts/javajam.php" method="post">
+					<label for="myLocation">*Location</label>
+						<select id="myLocation" name="myLocation" required>
+							<option value="Cafe Croazon">Cafe Corazon</option>
+							<option value="Art Museum">Art Museum</option>
+							<option value="Domes">Domes</option>
+							<option value="Summer Fest">SummerFest</option>
+					    </select>
+					<label for="myLocation">*Part size</label>
+						<select id="partySize" name="partSize" required>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+					    </select>
+					<label for="startDate">*Reservation Date</label>
+						<input type="date" id="startDate" name="startDate" required>
+					<label for="myEmail">*E-mail</label>
+						<input type="myEmail" id="myEmail" name="myEmail" required>
+					<label for="myRequest">*Special Requeset</label>
+						<textarea id="myRequest" name="myRequest" rows="2" cols="20" required></textarea>
+					<input type="submit" value="Place Reservation">
+				</form>
+
+
+			</main>
+			<footer>
+				<h2>
+				Copyright &copy 2017 Milwaukee Wisconsin<br>
+				<a href ="mailto:blah@blah.com">Nick Flatow</a>	
+				</h2>
+			</footer>
+		</div>
+	
+	</body>
+</html>
